@@ -92,7 +92,7 @@ module IntacctRB
 
       response = send_xml('get_list') do |xml|
         xml.function(controlid: "f4") {
-          xml.get_list(object: "employee", maxitems: "10", showprivate:"false") {
+          xml.get_list(object: "employee", maxitems: "2000", showprivate:"false") {
             # xml.fields {
             #   fields.each do |field|
             #     xml.field field.to_s
